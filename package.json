@@ -1,0 +1,35 @@
+{
+  "name": "react-node",
+  "version": "1.0.0",
+  "description": "vue和node全栈一体化框架",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "i": "npm run cInstall && npm run sInstall",
+    "c": "cd ./client && npm run serve",
+    "s": "cd ./server && npm run dev",
+    "clear": "rm -rf ./client/node_modules && rm -rf ./server/node_modules ",
+    "cInstall": "cd ./client && npm i",
+    "sInstall": "cd ./server && npm i",
+    "lint:prettier": "prettier --check \"**/**.{js,jsx,tsx,ts,less,md,json}\" --end-of-line auto",
+    "build": "npm run clientbuild && npm run serverbuild",
+    "serverbuild": "cd server && npm run build",
+    "clientbuild": "cd client && npm run build"
+  },
+  "keywords": [
+    "vue",
+    "全栈一体化框架"
+  ],
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-promise": "^4.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XuXinJ/vue-node.git"
+  },
+  "author": "xuxinjiang 565657400@qq.com"
+}
